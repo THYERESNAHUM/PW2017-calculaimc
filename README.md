@@ -10,7 +10,7 @@ https://github.com/THYERESNAHUM/PW2017-calculaimc.git
 
 **Procedimento para clonar o repositorio**
 ```
-git clone https://github.com/THYERESNAHUM/PW2017-biografia.git
+git clone https://github.com/THYERESNAHUM/PW2017-calculaimc.git
 ```
 **Comando para executar o servidor Tomcat**
 
