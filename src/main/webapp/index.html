@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <head>
 
-<title>Documento sem título</title>
+<title>Calculadora</title>
 <style>form[role=caixa] {
 	color: #5d5d5d;
 	background: #F0F0E8;
@@ -47,16 +47,14 @@ function calcula_imc(){
 var altura = document.calculaimc.altura.value;
 var peso = document.calculaimc.peso.value;
 var sexo = document.calculaimc.sexo.value;
-
 var quadrado = (altura * altura);
-
 var imc = (peso/quadrado);
 
 	
 	if((sexo=="F")){
 
 		if(imc<20.7){
-		alert("Abaixo do Peso");
+				alert("Abaixo do Peso");
 		}
 		else if(imc>=20.7 && imc<26.4){
 				alert("Peso ideal");
@@ -73,7 +71,7 @@ var imc = (peso/quadrado);
 	}else if((sexo=="M")){
 	
 		if(imc<20.7){
-		alert("Abaixo do Peso");
+				alert("Abaixo do Peso");
 		}
 		else if(imc>=20.7 && imc<26.4){
 				alert("Peso ideal");
@@ -87,7 +85,7 @@ var imc = (peso/quadrado);
 		else if (imc>31.2){
 				alert("Obesidade");
 		}		
-}		
+	}		
 }
 </script>
 </div>
