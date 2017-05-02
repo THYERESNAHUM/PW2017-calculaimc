@@ -1,0 +1,98 @@
+<html>
+<meta charset="utf-8">
+<head>
+
+<title>Documento sem título</title>
+<style>form[role=caixa] {
+	color: #5d5d5d;
+	background: #F0F0E8;
+	padding: 25px;
+	border-radius: 15px;
+	-moz-border-radius: 15 px;
+	-webkit-border-radius: 15px;
+}
+</style>
+</head>
+<link rel="stylesheet">
+<link href="bootstrap/css/bootstrapcerulean.min.css" rel="stylesheet">
+<body>
+
+<div class="container">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<br> <br>
+				<form method="post" role="caixa" name="calculaimc">
+					<div align="center">
+					<h2>CALCULADORA IMC</h2>
+					</div>
+					<label for="peso">Peso</label> 
+					<input type="text" class="form-control input-sm" name="peso" placeholder="Informe seu peso em quilos">
+					<label for="altura">Altura</label> 
+					<input type="text" class="form-control input-sm" name="altura" placeholder="Informe sua altura">
+					<label for="sexo">Sexo</label> 
+					<select id="sexo" name="sexo" class="form-control input-sm">
+								<option value="" disabled selected>Selecionar</option>
+								<option value="F">Feminino</option>
+								<option value="M">Masculino</option>
+					</select>
+					<br>		
+					<input type="submit" value="Calcular" class="btn btn-primary" onclick="calcula_imc()">
+					<br> <br>
+				</form>
+				
+				<script type="text/javascript">
+				
+function calcula_imc(){
+var altura = document.calculaimc.altura.value;
+var peso = document.calculaimc.peso.value;
+var sexo = document.calculaimc.sexo.value;
+
+var quadrado = (altura * altura);
+
+var imc = (peso/quadrado);
+
+	
+	if((sexo=="F")){
+
+		if(imc<20.7){
+		alert("Abaixo do Peso");
+		}
+		else if(imc>=20.7 && imc<26.4){
+				alert("Peso ideal");
+		}
+		else if(imc>=26.5 && imc<27.8) {
+				alert("Pouco acima do peso");
+		}
+		else if(imc>=27.9 && imc<31.1) {
+				alert("Acima do peso");
+		}
+		else if (imc>31.2){
+				alert("Obesidade");
+		}	
+	}else if((sexo=="M")){
+	
+		if(imc<20.7){
+		alert("Abaixo do Peso");
+		}
+		else if(imc>=20.7 && imc<26.4){
+				alert("Peso ideal");
+		}
+		else if(imc>=26.5 && imc<27.8) {
+				alert("Pouco acima do peso");
+		}
+		else if(imc>=27.9 && imc<31.1) {
+				alert("Acima do peso");
+		}
+		else if (imc>31.2){
+				alert("Obesidade");
+		}		
+}		
+}
+</script>
+</div>
+</div>
+</div>
+
+</body>
+</html>
